@@ -25,7 +25,7 @@ const checkExistAge = (req, resp, next) => {
   const { age } = req.query
 
   if (!age) {
-    return resp.render('/')
+    return resp.render('form')
   }
   next()
 }
